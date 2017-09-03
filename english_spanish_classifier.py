@@ -86,7 +86,7 @@ optimizer = optim.SGD(model.parameters(), lr=0.1)
 #TRAIN!
 for epoch in range(100):
 	for instance, label in data:
-		#clear out gradients from previous epoch
+		#clear out gradients from previous instance
 		model.zero_grad()
 
 		#make BoW vector
